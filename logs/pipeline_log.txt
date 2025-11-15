@@ -3570,3 +3570,27 @@ ADF test - Gaz : 0.09243114
 2016-12-23 2016-12-23      53.02
  [ reached 'max' / getOption("max.print") -- omitted 1966 rows ]
 ✅ Modèles entraînés avec succès.
+
+=====================================
+🚀 LANCEMENT DU PIPELINE -  1763202077 
+=====================================
+
+➡️  Étape : Préparation des données...
+❌ ERREUR dans Préparation des données : aucun package nommé ‘DMwR2’ n'est trouvé 
+
+➡️  Étape : Analyse exploratoire...
+ADF test - Pétrole : 0.3689395 
+ADF test - Gaz : 0.09243114 
+✅ Étape réussie : Analyse exploratoire (0.96 sec)
+
+➡️  Étape : Modélisation classique...
+✅ Résultats et métriques exportés dans model_results.json
+✅ Étape réussie : Modélisation classique (1.78 sec)
+
+⚠️ Certaines étapes ont échoué. Voir : logs/errors.json 
+
+=====================================
+🎉 PIPELINE TERMINÉ -  1763202082 
+Résultats disponibles dans : reports/model_results.json 
+Logs enregistrés dans : logs/pipeline_log.txt 
+=====================================
