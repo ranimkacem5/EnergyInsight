@@ -12,8 +12,13 @@ import base64
 st.set_page_config(page_title="Analyse Pétrole & Gaz — LLM + Visuals", layout="wide")
 st.title("📈 Analyse automatique — Pétrole & Gaz (Interprétation + Visuals + Export)")
 
-# --- Configuration OpenAI (REMPLACEZ PAR VOTRE CLE LOCALE) ---
-OPENAI_API_KEY = "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"
+from dotenv import load_dotenv
+import os
+
+# Charger les variables depuis .env
+
+load_dotenv(dotenv_path=r"C:\Users\ranim\Desktop\projetR\.env")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # --- Utilitaires ---
